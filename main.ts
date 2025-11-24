@@ -5,6 +5,10 @@ basic.forever(function () {
     if (sonar < 20 && sonar > 1) {
         cuteBot.motors(0, -50)
         basic.pause(randint(100, 200))
+    } else if (sonar < 40 && sonar > 1) {
+        cuteBot.motors(75, 75)
+    } else if (sonar < 30 && sonar > 1) {
+        cuteBot.motors(50, 50)
     } else {
         cuteBot.forward()
     }
